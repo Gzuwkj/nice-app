@@ -1,10 +1,3 @@
-// import * as fg from 'fast-glob'
-//
-// const getPackages = (packagePath: string) =>
-//   fg.sync('*', { cwd: packagePath, onlyDirectories: true })
-//
-// const scopes = [...getPackages('packages'), ...getPackages('apps')]
-
 export default {
   extends: ['@commitlint/config-conventional'],
   rules: {

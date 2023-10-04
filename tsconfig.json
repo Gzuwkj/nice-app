@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
     "paths": {
-      "@client/*": ["./apps/chat-web-client/src/*"],
-      "@admin/*": ["./apps/chat-web-admin/src/*"]
+      "@/*": ["./src/*"]
     },
     "baseUrl": ".",
     "module": "ESNext",

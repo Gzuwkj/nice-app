@@ -1,14 +1,21 @@
 {
-  "name": "chat-web",
+  "name": "nice-app",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "main": "src/main.tsx",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "dev:android": "tauri android dev"
+    "dev:android": "tauri android dev",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install"
+  },
+  "engines": {
+    "node": "18.17.1",
+    "pnpm": "8.7.6"
   },
   "dependencies": {
     "@nextui-org/react": "^2.1.13",
