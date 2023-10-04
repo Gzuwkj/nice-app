@@ -11,7 +11,8 @@
     "dev": "vite",
     "dev:android": "tauri android dev",
     "preinstall": "npx only-allow pnpm",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "prettier . --write --cache && eslint --fix --cache"
   },
   "engines": {
     "node": "18.17.1",
