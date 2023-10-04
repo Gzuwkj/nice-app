@@ -1,9 +1,9 @@
-import * as fg from 'fast-glob'
-
-const getPackages = (packagePath: string) =>
-  fg.sync('*', { cwd: packagePath, onlyDirectories: true })
-
-const scopes = [...getPackages('packages'), ...getPackages('apps')]
+// import * as fg from 'fast-glob'
+//
+// const getPackages = (packagePath: string) =>
+//   fg.sync('*', { cwd: packagePath, onlyDirectories: true })
+//
+// const scopes = [...getPackages('packages'), ...getPackages('apps')]
 
 export default {
   extends: ['@commitlint/config-conventional'],
@@ -12,7 +12,7 @@ export default {
      * type[scope]: [function] description
      *      ^^^^^
      */
-    'scope-enum': [2, 'always', scopes],
+    'scope-enum': [2, 'always', []],
     /**
      * type[scope]: [function] description
      *
