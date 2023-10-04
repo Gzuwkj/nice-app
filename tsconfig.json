@@ -17,7 +17,8 @@
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "types": ["node", "naive-ui/volar"]
+    "types": ["node"],
+    "jsx": "react"
   },
   "exclude": ["node_modules", "dist"]
 }
